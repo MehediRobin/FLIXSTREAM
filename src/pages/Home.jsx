@@ -4,6 +4,7 @@ import { useState } from "react";
 import requests from "../../requests";
 import { FaPlay } from "react-icons/fa";
 import { LuInfo } from "react-icons/lu";
+import Row from "../components/Row";
 
 const Home = () => {
   const [movies, setMovies] = useState([]);
@@ -21,7 +22,7 @@ const Home = () => {
     }
   };
   return (
-    <div className="text-white w-full h-[650px] mb-10">
+    <div className="text-white w-full h-[650px] mb-10 scrollbar-hide">
       <div className="w-full h-full">
         <div className="w-full h-full">
           <div className="absolute w-full h-[650px] bg-gradient-to-r from-black"></div>
@@ -50,6 +51,12 @@ const Home = () => {
             {treamOverview(movie?.overview, 250)}
           </p>
         </div>
+      </div>
+      <div className="mt-10">
+        <Row rowID="1" title="Up Coming" fetchURL={requests.upcomingMovies} />
+        <Row rowID="2" title="Now Playing" fetchURL={requests.nowPlaying} />
+        <Row rowID="3" title="Top Rated" fetchURL={requests.topRated} />
+        <Row rowID="4" title="TV Shows" fetchURL={requests.tvShows} />
       </div>
     </div>
   );

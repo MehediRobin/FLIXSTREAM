@@ -1,10 +1,10 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
-import Row from "./components/Row";
-import requests from "../requests";
 import { Route, Routes } from "react-router-dom";
 import AuthContextProvider from "./context/AuthContext";
+import Signin from "./pages/Signin";
+import Signup from "./pages/Signup";
 
 function App() {
   return (
@@ -13,12 +13,10 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/signin" element={<Signin />} />
+          <Route path="/signup" element={<Signup />} />
         </Routes>
       </AuthContextProvider>
-      <Row rowID="1" title="Up Coming" fetchURL={requests.upcomingMovies} />
-      <Row rowID="2" title="Now Playing" fetchURL={requests.nowPlaying} />
-      <Row rowID="3" title="Top Rated" fetchURL={requests.topRated} />
-      <Row rowID="4" title="TV Shows" fetchURL={requests.tvShows} />
     </>
   );
 }
