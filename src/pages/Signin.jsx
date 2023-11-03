@@ -6,7 +6,7 @@ const Signin = () => {
       <div className="w-full h-full fixed bg-gradient-to-b from-black"></div>
       <img
         className=" hidden sm:block h-[100%] w-full object-cover"
-        src="https://i.redd.it/4fxxbm4opjd31.jpg"
+        src="/src/assets/movie.jpg"
         alt=""
       />
       <div className="w-full h-screen top-[20%] z-50 px-4 py-2 fixed">

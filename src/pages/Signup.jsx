@@ -7,7 +7,7 @@ const Signup = () => {
       <img
         className=" hidden sm:block h-[100%] w-full object-cover"
         src="/src/assets/movie.jpg"
-        alt=""
+        alt="signupcover"
       />
       <div className="w-full h-screen top-[20%] z-50 px-4 py-2 fixed">
         <div className="max-w-[450px] h-[600px] mx-auto bg-black/75">
