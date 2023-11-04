@@ -15,6 +15,7 @@ const Movie = ({ movie }) => {
           </span>
         </p>
       </div>
+      <div className=""></div>
     </div>
   );
 };

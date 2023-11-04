@@ -26,10 +26,8 @@ const Row = ({ title, fetchURL, rowID }) => {
       </h2>
       <div className="flex items-center group relative">
         <MdChevronLeft
-          onClick={() => {
-            scrollLeft();
-          }}
-          className=" bg-white absolute left-0 rounded-full opacity-50 hover:opacity-100 cursor-pointer z-50 hidden group-hover:block ease-linear"
+          onClick={scrollLeft}
+          className=" text-violet-800 bg-white absolute left-0 rounded-full opacity-50 hover:opacity-100 cursor-pointer z-50 hidden group-hover:block"
           size={40}
         />
         <div
@@ -44,7 +42,7 @@ const Row = ({ title, fetchURL, rowID }) => {
           onClick={() => {
             scrollRight();
           }}
-          className=" bg-white absolute right-0 rounded-full opacity-50 hover:opacity-100 cursor-pointer hidden z-50 group-hover:block"
+          className="text-violet-800 bg-white absolute right-0 rounded-full opacity-50 hover:opacity-100 cursor-pointer hidden z-50 group-hover:block"
           size={40}
         />
       </div>
