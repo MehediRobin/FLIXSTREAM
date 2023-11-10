@@ -11,7 +11,7 @@ const Signup = () => {
         alt="signupcover"
       />
       <div className="w-full h-screen top-[20%] z-50 px-4 py-2 fixed">
-        <div className="max-w-[450px] h-[600px] mx-auto bg-black/75">
+        <div className="max-w-[450px] max-h-[600px] mx-auto bg-black/75">
           <div className="max-w-[320px] mx-auto py-20">
             <h1 className="text-white text-3xl font-bold mb-3">Sign Up</h1>
             <form className="flex flex-col">
